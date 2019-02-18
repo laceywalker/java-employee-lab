@@ -28,4 +28,15 @@ public class DatabaseAdminTest {
         assertEquals(100, databaseAdmin.getSalary());
     }
 
+    @Test
+    public void canRaiseSalary(){
+        double newSalary = databaseAdmin.raiseSalary(10.0);
+        assertEquals(1000, newSalary, 0.01);
+    }
+
+    @Test
+    public void canGetBonus(){
+        assertEquals(1, databaseAdmin.payBonus(), 0.01);
+    }
+
 }

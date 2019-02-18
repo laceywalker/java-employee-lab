@@ -41,7 +41,7 @@ public class ManagerTest {
 
     @Test
     public void canGetBonus(){
-        assertEquals(252500, manager.payBonus(), 0.01);
+        assertEquals(2500, manager.payBonus(), 0.01);
     }
 
 
